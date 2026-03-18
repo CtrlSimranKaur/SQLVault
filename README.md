@@ -29,5 +29,36 @@
 4.Find the first 5 Pixar movies and their release year.
  (SELECT * FROM movies where id < 6;)
 
+#Exercise 3 
+1. Find all the Toy Story movies.
+(SELECT * FROM movies where title like "Toy Story%";)
+
+2. Find all the movies directed by John Lasseter.
+(SELECT * FROM movies where director like "John Lasseter";)
+
+3. Find all the movies (and director) not directed by John Lasseter.
+(SELECT * FROM movies where director not like "John Lasseter";)
+
+4.Find all the WALL-* movies.
+SELECT * FROM movies where title like 'WALL-%';
+
+#Exercise 4
+
+1.List all directors of Pixar movies (alphabetically), without duplicates.
+ (SELECT DISTINCT Director FROM movies ORDER BY (Director) ASC;)
+
+2.List the last four Pixar movies released (ordered from most recent to least) 
+ (SELECT title, year FROM movies ORDER BY year DESC LIMIT 4;)
+
+
+3.List the first five Pixar movies sorted alphabetically
+ (SELECT title FROM movies ORDER BY title ASC LIMIT 5;)
+
+
+4.List the next five Pixar movies sorted alphabetically
+ (SELECT title FROM movies ORDER BY title ASC LIMIT 5 OFFSET 5;)
+
+#Exercise 5
+
 
 
