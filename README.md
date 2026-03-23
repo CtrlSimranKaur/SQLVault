@@ -1,4 +1,6 @@
-# SQLBolt Exercise 1
+# SQLBolt Exercises
+
+#Exercise 1
 
 1. Find the title of each film.
  (SELECT Title FROM movies;)
