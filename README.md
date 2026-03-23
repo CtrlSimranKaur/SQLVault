@@ -2,7 +2,7 @@
 
 #Exercise 1
 
-1. Find the title of each film.
+1.Find the title of each film.
 [SELECT Title FROM movies;]
 
 
@@ -46,11 +46,11 @@
 [SELECT * FROM movies where title like "Toy Story%";]
 
 
-3. Find all the movies directed by John Lasseter.
+2. Find all the movies directed by John Lasseter.
 [SELECT * FROM movies where director like "John Lasseter";]
 
 
-4. Find all the movies (and director) not directed by John Lasseter.
+3. Find all the movies (and director) not directed by John Lasseter.
 [SELECT * FROM movies where director not like "John Lasseter";]
 
 
@@ -61,6 +61,7 @@
 
 1.List all directors of Pixar movies (alphabetically), without duplicates.
 [SELECT DISTINCT Director FROM movies ORDER BY (Director) ASC;]
+
 
 2.List the last four Pixar movies released (ordered from most recent to least) 
 [SELECT title, year FROM movies ORDER BY year DESC LIMIT 4;]
